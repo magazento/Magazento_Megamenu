@@ -1,0 +1,300 @@
+#menu li.home-link {
+background: url(img/home_icon_left.gif) no-repeat left center !important;
+}
+
+#menu li.home-link a {
+background: url(img/home_icon_right.gif) no-repeat right center !important;
+padding-right: 24px;
+width: 11px; 
+}
+#menu li.home-link:hover{
+background: url(img/home_icon_left_hover.gif) no-repeat left center !important;
+}
+
+#menu li.home-link a:hover {
+background: url(img/home_icon_right_hover.gif) no-repeat right center !important;
+}
+
+
+#menu {
+    list-style:none;
+    width: 0 auto;
+    display: block;
+	background: #fff;
+    height:32px;
+}
+#menu li {
+	float: left;
+	display: block;
+	text-align: center;
+	position: relative;
+	padding: 0;
+	border: none;
+	background: url("img/menu_leftcurve.gif") no-repeat left 50%;
+	margin-right: 5px;   
+	
+}
+
+#menu li:hover {
+    /*	border: 1px solid #777777;*/
+    font-family:Arial, Helvetica, sans-serif;
+	background:url("img/menu_leftcurve_hover.gif") no-repeat scroll left center;    
+    font-weight: bold;
+    font-size:12px;
+    color: #fff;
+    padding: 0;
+}
+.nav-container #menu .allcategories { 
+}
+
+.nav-container #menu .allcategories:hover {
+
+}
+
+#menu li a.drop {
+	background: url("img/menu_rightcurve.gif") no-repeat scroll right center;
+	padding: 7px 16px;	
+	
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size:12px;
+    color: #fff;
+    display:block;
+    outline:0;
+    text-decoration:none;
+}
+
+#menu li:hover a.drop {
+    /*	color:#161616;*/
+/*    text-shadow: 1px 1px 1px #ffffff;*/
+    background:url("img/menu_rightcurve_hover.gif") no-repeat scroll right center;
+}
+
+.dropdown_1column,
+.dropdown_1column_simple,
+.dropdown_2column_simple,
+.dropdown_2column,
+.dropdown_3column,
+.dropdown_4column,
+.dropdown_5column {
+    z-index: 9999;
+    margin:5px auto;
+    margin-top: 0;
+    float:left;
+    position:absolute;
+    left:-999em; /* Hides the drop down */
+    text-align:left;
+    padding:10px 5px 10px 5px;
+    border-top:none;
+    background: #494b4a ;
+
+    /* Rounded Corners */
+    -moz-border-radius: 0px 0px 5px 5px;
+    -webkit-border-radius: 0px 5px 5px 5px;
+    border-radius: 0px 0px 5px 5px;
+
+
+    -moz-box-shadow: 1px 5px 5px #222;
+    -webkit-box-shadow: 1px 5px 5px #222;
+    box-shadow: 1px 5px 5px #222;
+}
+
+.dropdown_1column_simple {width: 100px;}
+.dropdown_1column {width: 120px;}
+.dropdown_2column {width: 260px;}
+.dropdown_3column {width: 380px;}
+.dropdown_4column {width: 460px;}
+.dropdown_5column {width: 580px;}
+
+.col_1 {width:105px;}
+.col_2 {width:240px;}
+.col_3 {width:360px;}
+.col_4 {width:440px;}
+.col_5 {width:560px;}
+
+.col_1,.col_2,.col_3,.col_4,.col_5 {
+    display:inline;
+    float: left;
+    position: relative;
+    margin-left: 5px;
+    margin-right: 5px;
+    /*    border: 1px solid red;*/
+}
+
+.nav-container #menu .first:hover .align_left  {
+    left:0px;
+    top:auto;
+}
+#menu li:hover .align_left  {
+    left:0px;
+    top:auto;
+}
+#menu li:hover .align_right {
+    left:auto;
+    right:0;
+    top:auto;
+}
+
+.nav-container #menu .allcategories:hover .align_right {
+    left:auto;
+    right:0px;
+    top:auto;
+}
+
+#menu .menu_right {
+    float:right;
+    margin-right:5px;
+    
+}
+#menu li .align_right {
+    /* Rounded Corners */
+    -moz-border-radius: 0px 0px 5px 5px;
+    -webkit-border-radius: 0px 0px 5px 5px;
+    border-radius: 0px 0px 5px 5px;
+}
+
+
+
+#menu p, #menu h2, #menu h3, #menu ul li {
+    font-family:Arial, Helvetica, sans-serif;
+    line-height:21px;
+    font-size:10px;
+    text-align:left;
+    color:  #fff;
+}
+#menu h2 {
+    font-size:21px;
+    font-weight:400;
+    letter-spacing:-1px;
+    margin:7px 0 8px 0;
+    padding-bottom:1px;
+    border-bottom:1px solid #666666;
+}
+#menu h3 {
+    font-size:14px;
+    margin:7px 0 8px 0;
+    padding-bottom:1px;
+    border-bottom:1px solid #888888;
+}
+#menu p {
+    line-height:18px;
+    margin:0 0 10px 0;
+}
+
+#menu li:hover div a {
+    font-size:12px;
+    color: #000000;
+    text-decoration: none;
+}
+#menu li:hover div a:hover {
+    color: #fff;
+}
+#menu li:hover div a {
+    color: #fff;
+}
+/*
+LEVELS
+*/
+.viewall { color: #666;padding-right: 10px;  background:url("img/all.gif") no-repeat right 50%;}
+
+.level1 {font-size:12px; padding-left: 2px; display: block; width: 80%; font-weight:bold; border-bottom: 1px dashed #DDDDDD;}
+.level2 {font-size:12px; padding-left: 6px;}
+.level3 {font-size:12px; padding-left: 10px;}
+.level4 {font-size:9px; padding-left: 12px;}
+.level5 {font-size:9px; padding-left: 14px;}
+.level6 {font-size:9px; padding-left: 16px;}
+.level7 {font-size:9px; padding-left: 18px;}
+.level8 {font-size:9px; padding-left: 18px;}
+
+.strong {
+    font-weight:bold;
+}
+.italic {
+    font-style:italic;
+}
+
+.imgshadow {  
+    background:#FFFFFF;
+    padding:4px;
+    border:1px solid #777777;
+    margin-top:5px;
+    -moz-box-shadow:0px 0px 5px #666666;
+    -webkit-box-shadow:0px 0px 5px #666666;
+    box-shadow:0px 0px 5px #666666;
+}
+.img_left {  
+    width:auto;
+    float:left;
+    margin:5px 15px 5px 5px;
+}
+
+#menu li .black_box {
+    background-color:#333333;
+    color: #eeeeee;
+    text-shadow: 1px 1px 1px #000;
+    padding:4px 6px 4px 6px;
+
+    /*    Rounded Corners*/
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+
+    -webkit-box-shadow:inset 0 0 3px #000000;
+    -moz-box-shadow:inset 0 0 3px #000000;
+    box-shadow:inset 0 0 3px #000000;
+}
+
+#menu li ul {
+    list-style:none;
+    padding:0;
+    margin:0 0 2px 0;
+}
+#menu li ul li a {
+    font-weight: normal;
+}
+#menu li ul li {
+    background:0;
+    font-size:12px;
+    line-height:24px;
+    position:relative;
+    padding:0;
+    margin:0;
+    float:none;
+    text-align:left;
+    width:130px;
+}
+#menu li ul li:hover {
+    background:none;
+    border:none;
+    padding:0;
+    margin:0;
+}
+
+#menu li .greybox li {
+    background:#F4F4F4;
+    border:1px solid #bbbbbb;
+    margin:0px 0px 4px 0px;
+    padding:4px 6px 4px 6px;
+    width:116px;
+
+}
+#menu li .greybox li:hover {
+    background:#ffffff;
+    border:1px solid #aaaaaa;
+    padding:4px 6px 4px 6px;
+    margin:0px 0px 4px 0px;
+}
+
+
+/*
+SIMPLE RIGHT
+*/
+
+#menu li:hover .simple li a {
+    font-size:12px;
+    padding-left: 2px;
+    display: block;
+    width: 50%;
+    font-weight:bold;
+    border-bottom: 1px dashed #DDDDDD;
+}

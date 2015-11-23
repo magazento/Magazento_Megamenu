@@ -1,0 +1,39 @@
+<div class="nav-container">
+    <div class="container1">
+        <div class="container2">
+            <ul id="menu">
+            	<?php if (Mage::getStoreConfig('megamenu/options/homebutton')):  ?>
+				<li class="home-link">
+					<a class="drop" href="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB); ?>">
+					&nbsp;
+					</a>
+				</li>   
+				<?php endif; ?>         
+                <?php echo $this->drawCatalog(); ?>
+                <?php if (Mage::getStoreConfig('megamenu/allpages/enable')):  ?>
+                <?php $itemAlign = Mage::getStoreConfig('megamenu/allpages/itemalign');  ?>
+                <?php $contentAlign = Mage::getStoreConfig('megamenu/allpages/contentalign');  ?>
+                <?php $title = Mage::getStoreConfig('megamenu/allpages/title');  ?>
+                <?php $storeId  = Mage::app()->getStore()->getId();
+                      $storeUrl = Mage::getModel('core/store')->load($storeId)->getUrl();
+                      $storeUrl.='#';
+                ?>
+                <?php $title = Mage::getStoreConfig('megamenu/allpages/title');  ?>
+                <li class="drop menu_<?php echo $itemAlign;?> allcategories">
+                    <a href="<?php echo $storeUrl;?>" class="drop"><?php echo $title;?></a>
+<!--                    <div class="dropdown_2column_simple align_<?php echo $contentAlign;?>">-->
+                    <div class="dropdown_2column_simple align_<?php echo $contentAlign;?>">
+                        <div class="col_1">
+                            <ul class="simple">
+                            <?php echo $this->drawAllCategoriesMenu(); ?>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <?php endif; ?>
+
+                <?php echo $this->drawAdminMenu(); ?>
+            </ul>
+        </div>
+    </div>
+</div>

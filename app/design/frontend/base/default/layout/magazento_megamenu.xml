@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<layout>
+    <default>
+<!--        <reference name="head">
+            <action method="addCss">
+                <stylesheet>magazento/megamenu/menublue.css</stylesheet>
+            </action>
+        </reference>-->
+        <reference name="top.menu">
+            <remove name="catalog.topnav" />
+            <block type="megamenu/navigation" name="megamenu.navigation" template="magazento/megamenu/navigation.phtml" />
+        </reference>
+    </default>
+</layout>
